@@ -15,11 +15,13 @@ import  errorMiddleware from   './middlewares/error.middleware.js'
 import  connectToDB from "./config/dbConnection.js"
 import morgan  from 'morgan'
 app.use(express.json())
-
+const allowedOrigin = 'https://mernera-empowering-students.vercel.app/';
 app.use(cors({
-    origin:[process.env.FRONTEND_URL],
-    credentials:true
+    origin: allowedOrigin,
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true  
 }))
+
 app.use(morgan('dev'))
 
 connectToDB();
