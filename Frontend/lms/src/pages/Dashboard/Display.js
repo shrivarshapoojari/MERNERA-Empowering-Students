@@ -94,10 +94,18 @@ console.log(state)
                 )  
 
                              
-                
-              
-
+              }
+                {
+                  lectures && lectures.length==0 && role=='ADMIN' &&
+                  
+                     
+                  (
+                    <div className='flex items-center justify-center'>
+                          <button className='btn btn-primary'  onClick={()=>navigate('/course/addlecture',{state:{...state}})}>Add Lecture</button>
+                      </div>
+                  )
                 }
+
            </div>
     </Second>
   )
