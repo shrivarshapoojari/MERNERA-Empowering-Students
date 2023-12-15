@@ -143,7 +143,7 @@ async function onFormSubmit(e)
                                           type='text'
                                           name='title'
                                           id='title'
-                                          placeholder='Enter Course Title'
+                                          placeholder='Enter Lecture Title'
                                           onChange={handleUserInput}
                                           value={userInput.title}
                                           className='bg-transparent px-2 py-3 w-full border'/>
@@ -157,7 +157,7 @@ async function onFormSubmit(e)
                                           type='text'
                                           name='description'
                                           id='description'
-                                          placeholder='Enter Course Description'
+                                          placeholder='Enter Lecture Description'
                                           onChange={handleUserInput}
                                           value={userInput.description}
                                           className='bg-transparent px-2 py-3 border w-full h-24 resize-none overflow-y-scroll '/>

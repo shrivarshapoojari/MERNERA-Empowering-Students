@@ -154,7 +154,7 @@ async function onFormSubmit(e)
                                           type='text'
                                           name='category'
                                           id='category'
-                                          placeholder='Enter Course Mentor Name'
+                                          placeholder='Enter Course Category'
                                           onChange={handleUserInput}
                                           value={userInput.category}
                                           className='bg-transparent px-2 py-3 border w-full'/>
