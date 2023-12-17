@@ -8,6 +8,18 @@ const CourseDescription = () => {
     const {state}=useLocation() // acces the data sent by course card
     const navigate=useNavigate();
 
+
+
+  async function loadUser(){
+      await dispatch(getUserData())
+    }
+   
+   
+    useEffect(()=>{
+
+      loadUser();
+    },[])
+ 
     const {role , data }=useSelector((state)=>state.auth)
     
 
