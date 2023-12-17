@@ -3,6 +3,8 @@ import React from 'react'
 import Second from '../../layouts/Second'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
+import { getUserData } from '../../redux/slices/authSlice'
+
 const CourseDescription = () => {
 
     const {state}=useLocation() // acces the data sent by course card
