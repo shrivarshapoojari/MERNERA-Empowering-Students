@@ -4,14 +4,14 @@ import Second from '../../layouts/Second'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useSelector } from 'react-redux'
 import { getUserData } from '../../redux/slices/authSlice'
-
+import { useDispatch} from 'react-redux'
 const CourseDescription = () => {
 
     const {state}=useLocation() // acces the data sent by course card
     const navigate=useNavigate();
 
 
-
+const dispatch=useDispatch()
   async function loadUser(){
       await dispatch(getUserData())
     }
