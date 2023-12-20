@@ -1,4 +1,4 @@
-import React from "react";
+ import React from "react";
  
 import { Link } from "react-router-dom";
 import HomePageMainImage from '../Assets/Images/homePageMainImage.png'
@@ -6,8 +6,8 @@ import Second from "../layouts/Second";
 const Home = () => {
   return (
     <Second>
-      <div className="pt-10 text-white flex items-center justify-center gap-10 mx-16  h-[90vh]">
-        <div className="w-1/2 space-y-6">
+      <div className="pt-10 text-white flex md:flex-row items-center justify-center gap-10 mx-16  h-[90vh] flex-col">
+        <div className="md:w-1/2 space-y-6">
             <h1 className="text-5xl font-semibold">
                 Find Out best <span className="text-purple-500 font-bold"> Online Courses </span>
             </h1>
